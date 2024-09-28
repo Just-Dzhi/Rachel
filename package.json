@@ -1,0 +1,26 @@
+{
+  "name": "rachel",
+  "version": "0.0.1",
+  "description": "Discord bot for MVRLY server with AI based on bun/discord.js/ollama",
+  "author": "G",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Just-Dzhi/Rachel"
+  },
+  "keywords": ["discord-js", "typescript", "ollama", "bun", "bot"],
+  "scripts": {
+    "start": "bun run ./src/main.ts"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/figlet": "^1.5.8"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.2",
+    "figlet": "^1.7.0"
+  }
+}

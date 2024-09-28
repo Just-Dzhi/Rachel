@@ -1,2 +1,2 @@
 # Rachel
-Discord bot for MVRLY server with AI based on ollama
+Discord bot for MVRLY discord server with AI based on bun/discord.js/ollama 
