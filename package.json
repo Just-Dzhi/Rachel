@@ -10,7 +10,8 @@
   "keywords": ["discord-js", "typescript", "ollama", "bun", "bot"],
   "scripts": {
     "start": "bun run ./src/main.ts",
-    "serve": "ollama serve"
+    "serve": "ollama serve",
+    "register": "bun run ./src/registerCommands.ts"
   },
   "type": "module",
   "devDependencies": {
