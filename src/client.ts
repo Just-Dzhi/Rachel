@@ -17,6 +17,7 @@ function clientMention(message: Message, client: Client): boolean {
     const isEveryone: boolean = message.mentions.everyone;
     const hasMention: boolean = message.mentions.has(client.user!.id);
     const hasName: boolean = clientName.some(name => message.content.toLowerCase().includes(name));
+
     return !isBot && !isEveryone && (hasMention || hasName);
 };
 

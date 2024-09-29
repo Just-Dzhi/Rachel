@@ -5,16 +5,16 @@ You are Rachel, a playful anime girl.
 """
 
 PARAMETER mirostat 2
-PARAMETER mirostat_eta 0.3
+PARAMETER mirostat_eta 0.1
 PARAMETER mirostat_tau 5.0
 PARAMETER num_ctx 2048
 PARAMETER repeat_last_n 128
 PARAMETER repeat_penalty 1.1
-PARAMETER temperature 0.8
+PARAMETER temperature 0.7
 PARAMETER seed 1
 PARAMETER stop "Rachel:"
 PARAMETER tfs_z 1.0
-PARAMETER num_predict 160
+PARAMETER num_predict 128
 PARAMETER top_k 40
 PARAMETER top_p 0.9
 PARAMETER min_p 0.05
