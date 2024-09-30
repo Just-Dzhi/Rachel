@@ -1,61 +1,79 @@
-# Rachel
+# Rachel :two_hearts:
 ## Discord bot for MVRLY discord server with AI based on bun/discord.js/ollama
 
 ![rachel](rachel.png)
 
-# Features
+___
 
-- ### AI based on ollama
+# Features :sparkles:
+
+- ### AI conversations based on ollama :speech_balloon:
 - ### function calling in LLM (wip)
-- ### / Commands (wip)
+- ### / Commands (wip) 
 - ### Database (wip)
 
 ![conversation](conversation.png)
 
-# Installation
+___
+
+# Installation :ghost:
 
 ## Prerequisites
 
-- ### Bun https://bun.sh/
-- ### Ollama https://ollama.com/
+- ### [Bun](https://bun.sh/)
+- ### [Ollama](https://ollama.com/)
 
 ## Setup project
 
 ### 1. Clone the repository
-
-#### ```git clone https://github.com/Just-Dzhi/Rachel.git```
-#### ```cd Rachel```
+```bash
+git clone https://github.com/Just-Dzhi/Rachel.git
+cd Rachel
+```
 
 ### 2. Install dependencies
-
-#### ```bun install```
+```bash
+bun install
+```
 
 ### 3. Set up environment variables:
 
-#### ```cp .env.example .env```
+```bash
+cp .env.example .env
+```
 #### And paste your own values
 
 ## Setup ollama
 
 ### 1. run server
 
-#### ```ollama serve```
+```bash
+ollama serve
+```
 
 ### 2. download model
 
-#### ```ollama pull qwen2.5```
+```bash
+ollama pull qwen2.5
+```
 
 ### 3. copy model and create Modelfile
 
-#### ```ollama cp qwen2.5 rachel```
-#### ```ollama create rachel -f Modelfile```
+```bash
+ollama cp qwen2.5 rachel
+ollama create rachel -f Modelfile
+```
 
-# Usage
+___
 
-- #### ```ollama serve```
+# Usage :mushroom:
 
-- #### ```bun start```
+### 1. run server
+```bash
+ollama serve
+```
 
-# Commands
-
-#### wip
+### 2. run project
+```bash
+bun start
+```
