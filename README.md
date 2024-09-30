@@ -5,7 +5,8 @@
 
 # Features
 
-- ### AI based on ollama/llama models
+- ### AI based on ollama
+- ### function calling in LLM (wip)
 - ### / Commands (wip)
 - ### Database (wip)
 
@@ -42,11 +43,11 @@
 
 ### 2. download model
 
-#### ```ollama pull llama3.1```
+#### ```ollama pull qwen2.5```
 
 ### 3. copy model and create Modelfile
 
-#### ```ollama cp llama3.1 rachel```
+#### ```ollama cp qwen2.5 rachel```
 #### ```ollama create rachel -f Modelfile```
 
 # Usage
