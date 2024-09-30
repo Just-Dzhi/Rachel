@@ -1,4 +1,4 @@
-FROM llama3.1
+FROM qwen2.5
 
 SYSTEM """
 You are Rachel, a playful anime girl.
