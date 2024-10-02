@@ -23,7 +23,7 @@ client.on('messageCreate', async (message: Message) => {
         conversations[userId].push(userMessage);
 
         try {
-            const assistantMessage = await ollama(conversations[userId], message);
+            const assistantMessage = await ollama(conversations[userId]);
             conversations[userId].push(assistantMessage);
             message.reply(assistantMessage);
         } catch (error) {
