@@ -9,6 +9,7 @@ function embed(
     title: string = 'title',
     description: string = 'description',
     ephemeral: boolean = false,
+    fields: any[] = [],
     thumbnail: any = client.user?.avatarURL()
 ) {
     const embed = new EmbedBuilder()
@@ -16,8 +17,9 @@ function embed(
         .setDescription(description)
         .setColor(0xffffff)
         .setThumbnail(thumbnail)
+        .addFields(fields);
 
     return { embeds: [embed], ephemeral: ephemeral };
 };
 
-export {cleanMessageMention, embed };
+export { cleanMessageMention, embed };
