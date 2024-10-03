@@ -15,7 +15,7 @@ function embed(
     const embed = new EmbedBuilder()
         .setTitle(title)
         .setDescription(description)
-        .setColor(0xffffff)
+        .setColor(0xfa628b)
         .setThumbnail(thumbnail)
         .addFields(fields);
 

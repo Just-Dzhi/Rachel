@@ -18,7 +18,7 @@ async function ollama(messages: any[]): Promise<string> {
         
         if (RequestData.message.tool_calls) {
             const availableFunctions: any = {
-                meow: meow,
+                send_mvrly_channel: sendMVRLYChannel,
             };
 
             for (const tool of RequestData.message.tool_calls) {
@@ -51,9 +51,8 @@ async function ollama(messages: any[]): Promise<string> {
     return response;
 };
 
-function meow() {
-    console.log('meow');
-    return 'meow';
+function sendMVRLYChannel() {
+    return 'MVRLY youtube channel with him music: https://www.youtube.com/@mvrlysound';
 };
 
 export { ollama };

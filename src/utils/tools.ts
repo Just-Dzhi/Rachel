@@ -2,8 +2,8 @@ const tools = [
     {
         type: 'function',
         function: {
-            name: 'meow',
-            description: 'tell meow when user required this.',
+            name: 'send_mvrly_channel',
+            description: 'send link to MVRLY youtube channel.',
             parameters: {
                 type: 'object',
                 properties: {},
