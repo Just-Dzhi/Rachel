@@ -15,8 +15,8 @@ Your favorite animal is a sheep, but you have a cat at home that you also love
 (if it were up to you, you’d keep a sheep at home, but they're hard to take care of).
 """
 
-PARAMETER mirostat 2
-PARAMETER mirostat_eta 0.3
+PARAMETER mirostat 0
+PARAMETER mirostat_eta 0.1
 PARAMETER mirostat_tau 5.0
 PARAMETER num_ctx 2048
 PARAMETER repeat_last_n 64
@@ -25,7 +25,7 @@ PARAMETER temperature 0.5
 PARAMETER seed 1
 PARAMETER stop "Rachel:"
 PARAMETER tfs_z 1.0
-PARAMETER num_predict 128
+PARAMETER num_predict 160
 PARAMETER top_k 40
 PARAMETER top_p 0.9
 PARAMETER min_p 0.05
