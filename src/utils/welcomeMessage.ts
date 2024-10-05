@@ -2,16 +2,15 @@ import figlet from 'figlet';
 
 const pkg = await Bun.file('./package.json').json();
 
-console.log(figlet.textSync(
-    pkg.name,
-    {
+console.log(
+    figlet.textSync(pkg.name, {
         font: 'Basic',
         horizontalLayout: 'default',
         verticalLayout: 'default',
         width: 80,
         whitespaceBreak: true,
-    }
-));
+    })
+);
 
 console.log(`Author: ${pkg.author}`);
 console.log(`Version: ${pkg.version}`);

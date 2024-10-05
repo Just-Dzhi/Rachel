@@ -8,8 +8,14 @@ client.on('interactionCreate', async (interaction) => {
         case 'help':
             await commandHelp(interaction);
             break;
-        default:
-            await interaction.reply({ content: `I'm sleeping and will answer later~`, ephemeral: true });
+        case 'meow':
+            await commandHelp(interaction);
             break;
-    };
+        default:
+            await interaction.reply({
+                content: `I'm sleeping and will answer later~`,
+                ephemeral: true,
+            });
+            break;
+    }
 });

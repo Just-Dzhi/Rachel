@@ -1,7 +1,7 @@
-import { cleanMessageMention } from '../utils/utils';
+import type { Message } from 'discord.js';
 import { client, clientMention } from '../client';
 import { ollama } from '../ollama';
-import type { Message } from 'discord.js';
+import { cleanMessageMention } from '../utils/utils';
 
 let conversations: { [key: string]: any[] } = {};
 
@@ -13,11 +13,11 @@ client.on('messageCreate', async (message: Message) => {
 
         if (!conversations[userId]) {
             conversations[userId] = [];
-        };
+        }
 
         const userMessage: any = {
-            'role': 'user',
-            'content': cleanMessageMention(message.content)
+            role: 'user',
+            content: cleanMessageMention(message.content),
         };
 
         conversations[userId].push(userMessage);
@@ -29,6 +29,6 @@ client.on('messageCreate', async (message: Message) => {
         } catch (error) {
             console.error(error);
             message.reply(`I'm sleeping and well answer later~`);
-        };
-    };
+        }
+    }
 });

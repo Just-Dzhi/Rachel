@@ -3,7 +3,7 @@ import { client } from '../client';
 
 function cleanMessageMention(message: string): string {
     return message.replace(/<@!?(\d+)>|<@&(\d+)>/g, '').trim();
-};
+}
 
 function embed(
     title: string = 'title',
@@ -20,6 +20,6 @@ function embed(
         .addFields(fields);
 
     return { embeds: [embed], ephemeral: ephemeral };
-};
+}
 
 export { cleanMessageMention, embed };

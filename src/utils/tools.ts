@@ -7,10 +7,10 @@ const tools = [
             parameters: {
                 type: 'object',
                 properties: {},
-                required: []
+                required: [],
             },
-        }
-    }
+        },
+    },
 ];
 
 export { tools };
